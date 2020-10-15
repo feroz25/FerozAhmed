@@ -8,7 +8,7 @@
 .body{
 	min-height: 100vh;
 	background: light;
-	min-width: 100vw;
+	
 	
 
 }
@@ -21,14 +21,14 @@
 	width: 60px;
 	height: 100%;
 	background: #3e0748;
-	transition: 0.5s;
-    overflow: hidden; 
+	
     right: 0px;  
 }
 
-.navigation:hover,
+
 .navigation.active{
 	width:300px;
+
 }
 
 .about-left img{
@@ -87,7 +87,7 @@
 }
 .toggle{
 	position: fixed;
-	top: 0;
+	top: 0px;
 	right: 0;
 	width: 60px;
 	height: 60px;
@@ -121,13 +121,17 @@
 @media( max-width: 767px)
 {
 	.navigation
-	{
+	{    
 		left: -60px;
+		
+
 	}
 	.navigation.active
 	{
 		left: 0px;
 		width: 100%;
+		height: auto;
+		
 	}
 }
 
@@ -176,5 +180,13 @@
 	margin-top: 3px;
 	margin-bottom: 2px;
 	margin-right: 2px;
-	padding-right: 3rem; 
+	padding-right: 2rem; 
+	padding-left: 4rem;
+}
+@media (min-width: 768px) {
+  section.works {
+    min-height: 100vh;
+    padding-right: 7rem; 
+    padding-top: 5rem;
+  }
 }
